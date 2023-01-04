@@ -21,10 +21,47 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.springboot</groupId>
+                <artifactId>spring-boot-demo-bom</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.springboot</groupId>
+                <artifactId>spring-boot-demo-ms1</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.springboot</groupId>
+                <artifactId>spring-boot-demo-ms2</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.springboot</groupId>
+                <artifactId>spring-boot-demo-ms3</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -37,5 +74,6 @@
         <module>spring-boot-demo-ms2</module>
         <module>spring-boot-demo-ms3</module>
         <module>spring-boot-demo-app</module>
+        <module>spring-boot-demo-bom</module>
     </modules>
 </project>
